@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+.ipynb_checkpoints/
+.pytest_cache/
+.DS_Store
+.claude/
+data/raw/*
+!data/raw/.gitkeep
+data/processed/

@@ -1,0 +1,64 @@
+{
+  "cv_roc_auc": {
+    "Baseline (predict nobody churns)": 0.5,
+    "Logistic Regression": 0.8589,
+    "Random Forest": 0.8614
+  },
+  "test": {
+    "Baseline (predict nobody churns)": {
+      "roc_auc": 0.5,
+      "pr_auc": 0.2654,
+      "accuracy": 0.7346,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "threshold": 0.5
+    },
+    "Logistic Regression": {
+      "roc_auc": 0.849,
+      "pr_auc": 0.6459,
+      "accuracy": 0.8041,
+      "precision": 0.6476,
+      "recall": 0.5749,
+      "f1": 0.6091,
+      "threshold": 0.5
+    },
+    "Random Forest": {
+      "roc_auc": 0.8551,
+      "pr_auc": 0.6702,
+      "accuracy": 0.8041,
+      "precision": 0.6655,
+      "recall": 0.5267,
+      "f1": 0.5881,
+      "threshold": 0.5
+    },
+    "Logistic Regression @ profit threshold": {
+      "roc_auc": 0.849,
+      "pr_auc": 0.6459,
+      "accuracy": 0.7246,
+      "precision": 0.4893,
+      "recall": 0.8556,
+      "f1": 0.6226,
+      "threshold": 0.21
+    }
+  },
+  "threshold": 0.21,
+  "campaigns": {
+    "Contact nobody": 0.0,
+    "Contact everyone": 27524.0,
+    "Model @ default 0.5": 44036.0,
+    "Model @ profit threshold 0.21": 52555.0
+  },
+  "assumptions": {
+    "offer_cost": 50.0,
+    "save_rate": 0.3,
+    "months_of_value": 12
+  },
+  "what_if_one_year_contract": {
+    "month-to-month customers (test set)": 773.0,
+    "avg predicted churn now": 0.429,
+    "avg predicted churn on a one-year contract": 0.293,
+    "expected churners now": 331.443,
+    "expected churners after switch": 226.755
+  }
+}
